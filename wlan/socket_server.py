@@ -11,7 +11,6 @@ print('listening on', addr)
 while True:
     conn, addr = s.accept()
     print('client connected from', addr)
-    s
     response = "hello world"
 
     # 发送数据函数 
