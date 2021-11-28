@@ -1,4 +1,5 @@
 # http://docs.micropython.org/en/latest/library/socket.html
+# 该demo只是一个socket的server示例，直接运行是无法被外界访问，需要开始ap或者sta
 import socket
 addr = socket.getaddrinfo('0.0.0.0', 80)[0][-1]
 
