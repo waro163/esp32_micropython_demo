@@ -3,14 +3,14 @@ import network
 
 # create access-point interface
 ap = network.WLAN(network.AP_IF)
+# activate the interface
+ap.active(True)
 # set the ESSID of the access point
 # ap.config(essid='ESP32-AP',channel=11,password="123abc")
 # detail configuration parameter see above link
 ap.config(essid='ESP32-AP')
 # set how many clients can connect to the network
 ap.config(max_clients=10)
-# activate the interface
-ap.active(True)
 
 print(ap.ifconfig())
 
